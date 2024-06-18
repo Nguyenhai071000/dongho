@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng dụng Đồng hồ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="clock" class="clock"></div>
+        <div class="nav">
+            <button class="nav-btn" onclick="showPage('alarm')">Báo thức</button>
+            <button class="nav-btn" onclick="showPage('stopwatch')">Bấm giờ</button>
+            <button class="nav-btn" onclick="showPage('timer')">Hẹn giờ</button>
+        </div>
+
+        <div id="alarm" class="page">
+            <h2>Báo thức</h2>
+            <button class="action-btn" onclick="addAlarm()">Thêm báo thức</button>
+            <ul id="alarmsList"></ul>
+        </div>
+
+        <div id="stopwatch" class="page">
+            <h2>Bấm giờ</h2>
+            <div id="stopwatchDisplay" class="display">00:00:00</div>
+            <div class="btn-group">
+                <button class="action-btn" onclick="startStopwatch()">Bắt đầu</button>
+                <button class="action-btn" onclick="stopStopwatch()">Dừng</button>
+                <button class="action-btn" onclick="resetStopwatch()">Đặt lại</button>
+            </div>
+        </div>
+
+        <div id="timer" class="page">
+            <h2>Hẹn giờ</h2>
+            <input type="number" id="timerInput" class="input" placeholder="Giây">
+            <div id="timerDisplay" class="display">00:00</div>
+            <div class="btn-group">
+                <button class="action-btn" onclick="startTimer()">Bắt đầu</button>
+                <button class="action-btn" onclick="stopTimer()">Dừng</button>
+                <button class="action-btn" onclick="resetTimer()">Đặt lại</button>
+            </div>
+        </div>
+
+        <!-- Language Settings -->
+        <div class="language-settings">
+            <h2>Chọn ngôn ngữ</h2>
+            <div class="language-options">
+                <button class="language-btn" onclick="changeLanguage('vi')">
+                    <img src="tải xuống.png" alt="Tiếng Việt" class="flag-icon"> Tiếng Việt
+                </button>
+                <button class="language-btn" onclick="changeLanguage('en')">
+                    <img src="Flag_of_England.svg.webp" alt="English" class="flag-icon"> English
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <audio id="alarmSound" src="alarm.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

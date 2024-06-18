@@ -1,0 +1,127 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f6faf6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #47f834;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(164, 151, 151, 0.1);
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+}
+
+.clock {
+    font-size: 48px;
+    color: #f0f4f0;
+    background-color: #0c0c0c;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.nav-btn {
+    background-color: #e1ff00;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background-color: #ff5900;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+.display {
+    font-size: 36px;
+    color: #0b0b0b;
+    background-color: #f8f6fb;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.action-btn {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.action-btn:hover {
+    background-color: #000000;
+}
+
+.input {
+    width: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+.language-settings {
+    margin-top: 20px;
+}
+
+.language-settings h2 {
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.language-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.language-btn {
+    background-color: #c11e80;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.language-btn:hover {
+    background-color: #ff0606;
+}
+
+.flag-icon {
+    width: 30px;
+    height: 20px;
+}
